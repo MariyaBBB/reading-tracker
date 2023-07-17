@@ -12,3 +12,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tracker {
+  min-height: 20px;
+  min-width: 40px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input {
+  width: 80px;
+  background: none;
+  border: none;
+  color: #800080;
+  font-size: 24px;
+}
+
+.input:hover, .input:active, .input:focus {
+  background: none;
+  border: none;
+  color: #800080;
+}
+
+.tracking-table {
+  display: grid; 
+  grid-template-columns: repeat(7, auto); 
+  gap: 10px;
+  justify-items: center;
+}
+
+.week-names {
+  display: grid; 
+  grid-template-columns: repeat(7, auto); 
+  gap: 10px;
+  justify-items: center;
+}
+
+.week-names h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.current-date {
+  background: #DC143C;
+  color: white;
+  border-radius: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+h2 {
+  text-align: center;
+  color: #800080;
+}
+
+.month-menu {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  content-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
