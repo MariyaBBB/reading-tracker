@@ -2,16 +2,16 @@ import moment from "moment";
 import React from "react";
 import { Form } from "react-bootstrap";
 
-export default function TrackingEvent({date}) {
+export default function TrackingEvent({date, month}) {
     const today = moment().add();
     const isCurrentDay = (day) => {
         return day.date() === today.date() && day.month() === today.month();
     }
 
     const isCurrentMonth = () => {
-        return date.month() === today.month();
+       return date.month() === +month;
     }
-    
+
     return (
         <div >
             {isCurrentMonth() ? 
