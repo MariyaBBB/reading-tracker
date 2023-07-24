@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Calendar from "./components/Calendar";
 import Month from "./pages/Month";
+import Main from "./pages/Main";
 
 function App() {
   window.moment = moment;
@@ -15,6 +16,7 @@ function App() {
 
       <Routes>
         <Route path="/month/:id" element={<Month />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </Router>
   );
